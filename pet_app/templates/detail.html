@@ -16,12 +16,12 @@
     <h5 class="card-text">Price: {{pet.price}}</h5>
       <p class="card-text">Available: {{pet.available}}</p>
     <div class="row text-center">
-{#        <div class="col-md-6">#}
-{#            <a href="{% url 'update' pet.id %}" class="btn btn-outline-primary btn-block">Update</a>#}
-{#        </div>#}
-{#        <div class="col-md-6">#}
-{#            <a href="{% url 'delete' pet.id %}" class="btn btn-outline-danger btn-block">Delete</a>#}
-{#        </div>#}
+        <div class="col-md-6">
+            <a href="{% url 'update' pet.id %}" class="btn btn-outline-primary btn-block">Update</a>
+        </div>
+        <div class="col-md-6">
+            <a href="{% url 'delete' pet.id %}" class="btn btn-outline-danger btn-block">Delete</a>
+        </div>
     </div>
   </div>
 </div>

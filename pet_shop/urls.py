@@ -24,6 +24,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.pet_list, name="list"),
     path("detail/<int:pet_id>/", views.pet_detail, name="detail"),
+    path("create/", views.pet_create, name="create"),
+    path("update/<int:pet_id>/", views.pet_update, name="update"),
+    path("delete/<int:pet_id>/", views.pet_delete, name="delete"),
 ]
 
 if settings.DEBUG:
