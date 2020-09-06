@@ -15,12 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from pet_app import views
 from django.conf import settings
 from django.conf.urls.static import static
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", views.pet_list, name="list"),
+    path("detail/<int:pet_id>/", views.pet_detail, name="detail"),
 ]
 
 if settings.DEBUG:
